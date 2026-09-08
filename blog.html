@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog | Isabelle Fujioka — SEO, copywriting e conteúdo estratégico</title>
+<meta name="description" content="Textos de Isabelle Fujioka sobre busca orgânica, GEO, AIO, CRO, copywriting, estratégia editorial e experiências interativas em HTML.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://ifujioka.github.io/portfolio/blog.html">
+<link rel="icon" href="logo-fuji.png">
+<meta name="theme-color" content="#1a1114">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Blog | Isabelle Fujioka">
+<meta property="og:description" content="Textos sobre SEO, GEO, AIO, copywriting, CRO e estratégia de conteúdo.">
+<meta property="og:url" content="https://ifujioka.github.io/portfolio/blog.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"Blog Isabelle Fujioka","description":"Textos sobre SEO, GEO, AIO, copywriting, CRO, estratégia editorial e experiências interativas.","url":"https://ifujioka.github.io/portfolio/blog.html","author":{"@type":"Person","name":"Isabelle Fujioka","url":"https://ifujioka.github.io/portfolio/"}}</script>
+<style>
+:root{
+  /* Rampa bordô. --ac carrega marcas, filetes, bordas e numerais grandes;
+     --ac-lt é o passo claro da mesma família, para todo texto pequeno em
+     vermelho (o bordô puro não alcança AA sobre fundo escuro). */
+  --bg:#1a1114; --surface:#241a1d; --text:#f2eae8;
+  --ac:#c0394b; --ac-lt:#d4707c; --ac-300:#e5a3aa;
+  --n-100:#faf4f3; --n-300:#d8cbc9; --n-400:#bdadab; --n-500:#9d8d8b;
+  --n-600:#7d6e6c; --n-800:#46393b; --n-900:#2e2224;
+  --divider:color-mix(in srgb,#f2eae8 16%,transparent);
+  --serif:"Cormorant Garamond",Georgia,serif;
+  --sans:"Inter",system-ui,-apple-system,sans-serif;
+  --r:8px; --wrap:1140px; --gut:24px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spacing:-.015em;margin:0}
+p{margin:0}
+img{display:block;max-width:100%}
+figure{margin:0}
+figcaption{font-size:11.5px;margin-top:8px;color:var(--n-600)}
+a{color:var(--ac-lt);text-underline-offset:3px}
+a:hover{color:var(--ac-300)}
+:focus{outline:none}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+::selection{background:color-mix(in srgb,var(--ac) 30%,transparent)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--gut)}
+.kicker{font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ac-lt);margin:0}
+.kicker.dim{color:var(--n-500)}
+.lead{font-size:17px;line-height:1.65;color:var(--n-300)}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:16px;top:16px;z-index:99;background:var(--surface);color:var(--text);padding:10px 14px;border-radius:var(--r)}
+.rule{height:1px;border:0;margin:0;background:linear-gradient(to right,transparent,var(--divider) 48px,var(--divider) calc(100% - 48px),transparent)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;flex:none;white-space:nowrap;font-family:var(--sans);font-size:14px;font-weight:500;line-height:1.2;text-decoration:none;cursor:pointer;padding:10px 18px;border-radius:var(--r);border:1px solid transparent;background:transparent;color:var(--text);transition:background .15s ease,border-color .15s ease}
+.btn-primary{color:var(--ac-lt);border-color:var(--ac)}
+.btn-primary:hover{background:color-mix(in srgb,var(--ac) 12%,transparent);color:var(--ac-lt)}
+.btn-primary:active{background:color-mix(in srgb,var(--ac) 22%,transparent)}
+.btn-secondary{border-color:var(--divider);color:var(--text)}
+.btn-secondary:hover{background:color-mix(in srgb,var(--text) 7%,transparent);color:var(--text)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;flex:none;white-space:nowrap;font-size:11.5px;padding:4px 10px;border-radius:6px;background:var(--n-800);color:var(--n-100)}
+
+.site-head{position:sticky;top:0;z-index:20;background:var(--bg)}
+.head-in{display:flex;align-items:center;gap:24px;flex-wrap:wrap;padding-block:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);margin-right:auto}
+.brand img{width:26px;height:26px;object-fit:contain;mix-blend-mode:lighten}
+.brand span{font-family:var(--serif);font-size:19px}
+.site-nav{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+.site-nav a{font-size:14px;color:var(--n-300);text-decoration:none}
+.site-nav a:hover,.site-nav a[aria-current=page]{color:var(--ac-lt)}
+
+section{scroll-margin-top:88px}
+.band{background:var(--surface);border-block:1px solid var(--n-900)}
+.pad{padding-block:80px}
+.pad-lg{padding-block:88px}
+h2.title{font-size:clamp(28px,3.4vw,42px);line-height:1.08;text-wrap:pretty}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:48px;align-items:end;margin-bottom:40px}
+.sec-head p{font-size:15.5px;line-height:1.65;color:var(--n-300);max-width:52ch}
+
+.hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:64px;align-items:start;padding-block:88px 64px}
+.hero h1{font-size:clamp(40px,5.6vw,74px);line-height:1.03;letter-spacing:-.02em;max-width:17ch;text-wrap:pretty;margin-top:22px}
+.hero .lead{max-width:60ch;margin-top:26px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.pillar{display:grid;grid-template-columns:34px minmax(0,1fr);gap:14px;padding:16px 0;border-top:1px solid var(--n-900)}
+.pillar b{font-family:var(--serif);font-size:22px;font-weight:500;color:var(--ac-lt)}
+.pillar strong{display:block;font-family:var(--serif);font-size:21px;font-weight:500;line-height:1.15}
+.pillar span{display:block;margin-top:6px;font-size:14px;line-height:1.55;color:var(--n-400)}
+
+.row{display:grid;grid-template-columns:minmax(0,.2fr) minmax(0,1fr) auto;gap:32px;align-items:baseline;padding:22px 4px;border-top:1px solid var(--n-900);text-decoration:none;color:var(--text)}
+.row:hover{background:color-mix(in srgb,var(--text) 4%,transparent);color:var(--text)}
+.row .who{font-size:12.5px;line-height:1.4;color:var(--ac-lt)}
+.row strong{display:block;font-family:var(--serif);font-size:clamp(20px,2.1vw,25px);font-weight:500;line-height:1.14;text-wrap:pretty}
+.row .desc{display:block;margin-top:8px;font-size:14px;line-height:1.6;color:var(--n-400);max-width:64ch}
+.row .selo{display:block;margin-top:10px;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--n-600)}
+.row i{font-style:normal;color:var(--ac-lt);font-size:17px}
+.row.tight{grid-template-columns:minmax(0,1fr) auto;gap:24px;padding:18px 4px}
+.row.tight strong{font-size:20px;line-height:1.18}
+.row.tight .desc{font-size:13.5px;line-height:1.55;max-width:62ch;margin-top:6px}
+.row.tight i{font-size:16px}
+
+.proj{display:grid;grid-template-columns:minmax(0,.32fr) minmax(0,1fr);gap:48px;align-items:start}
+.proj-nav{display:flex;flex-direction:column}
+.proj-nav button{text-align:left;cursor:pointer;background:transparent;color:var(--text);font:inherit;width:100%;padding:15px 0 15px 18px;border:0;border-top:1px solid var(--n-900);box-shadow:inset 1px 0 0 var(--n-800);opacity:.6;transition:opacity .15s ease}
+.proj-nav button:hover{opacity:.85}
+.proj-nav button[aria-selected=true]{opacity:1;box-shadow:inset 3px 0 0 var(--ac)}
+.proj-nav b{display:block;font-family:var(--serif);font-size:21px;font-weight:500;line-height:1.15}
+.proj-nav small{display:block;margin-top:4px;font-size:12px;line-height:1.35;color:var(--n-500)}
+.proj-body h3{font-size:clamp(26px,3vw,38px);line-height:1.06}
+.proj-body>p{margin-top:16px;font-size:16px;line-height:1.68;color:var(--n-300);max-width:64ch}
+.proj-body img{width:100%;border-radius:var(--r);mix-blend-mode:lighten}
+dl{margin:28px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:22px}
+dl>div{border-top:1px solid var(--n-800);padding-top:12px}
+dt{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--n-500)}
+dd{margin:6px 0 0;font-size:15px;line-height:1.45}
+
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--n-500);font-weight:500;padding:8px 6px}
+td{padding:16px 6px;vertical-align:top}
+thead tr{background:linear-gradient(to right,transparent,var(--divider) 48px,var(--divider) calc(100% - 48px),transparent) no-repeat bottom/100% 1px}
+tbody tr{background:linear-gradient(to right,transparent,color-mix(in srgb,var(--text) 8%,transparent) 48px,color-mix(in srgb,var(--text) 8%,transparent) calc(100% - 48px),transparent) no-repeat bottom/100% 1px}
+tbody tr:hover{background:linear-gradient(color-mix(in srgb,var(--text) 4%,transparent),color-mix(in srgb,var(--text) 4%,transparent)) no-repeat 0 0/100% 100%,linear-gradient(to right,transparent,color-mix(in srgb,var(--text) 8%,transparent) 48px,color-mix(in srgb,var(--text) 8%,transparent) calc(100% - 48px),transparent) no-repeat bottom/100% 1px}
+td.who{font-size:13.5px;color:var(--n-400)}
+td.num{font-family:var(--serif);font-size:25px;color:var(--ac);white-space:nowrap;padding-block:14px}
+td.what strong{display:block;font-weight:400}
+td.what span{display:block;margin-top:5px;font-size:13px;line-height:1.55;color:var(--n-400)}
+td.proof{font-size:12.5px;color:var(--n-400)}
+
+/* experiência — timeline tipográfica */
+.exp{display:grid;grid-template-columns:minmax(0,.34fr) minmax(0,1fr);gap:40px;padding:30px 0;border-top:1px solid var(--n-900);align-items:start}
+.exp h3{font-size:clamp(23px,2.4vw,29px);line-height:1.1}
+.exp .role{display:block;margin-top:8px;font-size:14.5px;color:var(--n-300)}
+.exp .when{display:block;margin-top:6px;font-size:12.5px;color:var(--n-600)}
+.exp ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px}
+.exp li{display:grid;grid-template-columns:14px minmax(0,1fr);gap:12px;font-size:15px;line-height:1.62;color:var(--n-300)}
+.exp li b{color:var(--ac);font-weight:400}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:48px;margin-top:64px}
+.stack>div{border-top:1px solid var(--n-800);padding:16px 0}
+.stack strong{display:block;font-family:var(--serif);font-size:20px;font-weight:500;line-height:1.2;text-wrap:pretty}
+.stack .sub{display:block;margin-top:5px;font-size:14px;color:var(--n-300)}
+.stack .when{display:block;margin-top:4px;font-size:12.5px;color:var(--n-600)}
+.stack .desc{display:block;margin-top:6px;font-size:14px;line-height:1.6;color:var(--n-400)}
+.mini>div{border-top:1px solid var(--n-900);padding:11px 0;font-size:14px;line-height:1.5;color:var(--n-300)}
+
+.fb-item{border-top:1px solid var(--n-800);padding:20px 0}
+.fb-item p{font-family:var(--serif);font-size:23px;line-height:1.25;text-wrap:pretty}
+.fb-item .who{display:block;margin-top:12px;font-size:13.5px;color:var(--n-300)}
+.fb-item .when{display:block;margin-top:4px;font-size:12.5px;color:var(--n-600)}
+
+.step{display:grid;grid-template-columns:minmax(0,.42fr) minmax(0,1fr);gap:40px;padding:26px 0;border-top:1px solid var(--n-900);align-items:baseline}
+.step-h{display:flex;gap:16px;align-items:baseline}
+.step-h i{font-family:var(--serif);font-style:normal;font-size:15px;letter-spacing:.08em;color:var(--n-600)}
+.step h3{font-size:clamp(24px,2.6vw,32px)}
+.step p{font-size:15.5px;line-height:1.68;color:var(--n-300);max-width:62ch}
+
+.svc-lead{border-top:1px solid var(--n-900);padding-top:32px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:48px;align-items:baseline}
+.svc-lead h3{font-size:clamp(28px,3.2vw,40px)}
+.svc-lead p{font-size:16.5px;line-height:1.68;color:var(--n-300)}
+.svc-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;margin-top:48px}
+.svc-row>div{border-top:1px solid var(--n-900);padding-top:24px}
+.svc-row h4{font-size:24px}
+.svc-row p{margin-top:12px;font-size:15px;line-height:1.62;color:var(--n-400)}
+
+.faq{border-top:1px solid var(--n-900)}
+.faq button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;background:transparent;border:0;color:var(--text);font:inherit;cursor:pointer;text-align:left}
+.faq button span{font-family:var(--serif);font-size:clamp(19px,2.1vw,24px);line-height:1.2;text-wrap:pretty}
+.faq button i{font-style:normal;color:var(--ac-lt);font-size:22px;line-height:1;flex:none}
+.faq p{padding:0 0 24px;font-size:15.5px;line-height:1.7;color:var(--n-300);max-width:70ch}
+
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:56px;align-items:start}
+.split img{width:100%;border-radius:var(--r);background:var(--n-100)}
+
+.posts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px}
+.posts article{border-top:1px solid var(--n-800);padding-top:22px;display:flex;flex-direction:column;gap:10px}
+.posts span.cat{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--n-500)}
+.posts h3{font-size:25px;line-height:1.12}
+.posts p{font-size:14.5px;line-height:1.6;color:var(--n-400)}
+.posts .when{margin-top:auto;padding-top:14px;font-size:12.5px;color:var(--n-600)}
+.blog-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+
+.contact{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:64px;align-items:start}
+.contact h2{font-size:clamp(32px,4.4vw,56px);line-height:1.03;letter-spacing:-.015em;max-width:19ch;text-wrap:pretty;margin-top:20px}
+.contact>div>p{font-size:16.5px;line-height:1.68;color:var(--n-300);margin-top:24px;max-width:52ch}
+.ch{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;padding:20px 4px;border-top:1px solid var(--n-900);text-decoration:none;color:var(--text)}
+.ch:hover{background:color-mix(in srgb,var(--text) 4%,transparent);color:var(--text)}
+.ch strong{display:block;font-family:var(--serif);font-size:21px;font-weight:500;line-height:1.15}
+.ch small{display:block;margin-top:4px;font-size:13.5px;color:var(--n-400)}
+.ch i{font-style:normal;color:var(--ac-lt);font-size:18px}
+
+footer{padding:32px var(--gut) 56px;max-width:var(--wrap);margin:0 auto}
+footer p{margin-top:24px;font-size:13px;color:var(--n-500)}
+
+@media (max-width:900px){
+  .hero,.sec-head,.proj,.svc-lead,.contact,.step,.exp,.split{grid-template-columns:1fr;gap:32px}
+  .hero{padding-block:64px 48px}
+  .pad,.pad-lg{padding-block:64px}
+  .sec-head,.two{margin-bottom:32px}
+  .two{margin-top:44px;gap:40px}
+  .step,.exp{gap:14px;padding:24px 0}
+  .row{grid-template-columns:minmax(0,1fr) auto;gap:20px}
+  .row .who{grid-column:1;order:-1}
+  .proj-nav{flex-direction:row;flex-wrap:wrap}
+  .proj-nav button{flex:1 1 160px;padding:14px 0 14px 16px}
+  table,thead,tbody,tr,td,th{display:block}
+  thead{display:none}
+  tbody tr{padding:18px 0;background-position:bottom}
+  td{padding:2px 0}
+  td.num{font-size:30px;padding-block:4px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.proj-nav button{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="index.html"><img src="logo-fuji.png" alt=""><span>Isabelle Fujioka</span></a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="index.html#provas">Resultados</a>
+      <a href="index.html#cases">Cases</a>
+      <a href="index.html#experiencia">Experiência</a>
+      <a href="para-clientes.html">Para clientes</a>
+      <a href="blog.html" aria-current="page">Blog</a>
+    </nav>
+    <a class="btn btn-primary" href="CV-Isabelle-Fujioka.pdf" download>Currículo (PDF)</a>
+  </div>
+  <hr class="rule">
+</header>
+
+<main id="conteudo">
+
+<section class="wrap hero">
+  <div>
+    <p class="kicker" style="margin-bottom:24px">Blog</p>
+    <h1>Ideias sobre busca, escrita e decisão.</h1>
+  </div>
+  <p class="lead">Onde eu publico o que aprendo sobre busca orgânica, GEO, AIO, CRO, estratégia editorial, escrita para temas complexos e experiências interativas em HTML.</p>
+</section>
+
+<section class="band">
+  <div class="wrap list">
+    <article class="entry">
+      <div class="meta">
+        <span class="cat">SEO, GEO e AIO</span>
+        <span class="when">Em breve</span>
+      </div>
+      <div>
+        <h2>Como transformar conteúdo técnico em resposta de IA</h2>
+        <p>Estrutura, contexto, entidades e clareza para conteúdos que precisam performar ao mesmo tempo em buscadores e em mecanismos generativos — e por que os dois pedem coisas diferentes do mesmo texto.</p>
+        <a class="more" href="#">Ler conteúdo &#8594;</a>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <span class="cat">Copywriting</span>
+        <span class="when">Em breve</span>
+      </div>
+      <div>
+        <h2>O que uma boa copy precisa fazer antes de vender</h2>
+        <p>Antes do CTA existe contexto, objeção, valor e progressão de leitura. Como organizar essa jornada na mensagem sem empurrar a decisão para o leitor cedo demais.</p>
+        <a class="more" href="#">Ler conteúdo &#8594;</a>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <span class="cat">Estratégia de conteúdo</span>
+        <span class="when">Em breve</span>
+      </div>
+      <div>
+        <h2>Como organizar um acervo editorial por intenção de busca</h2>
+        <p>Um método para separar conteúdos por marca, etapa da jornada, objetivo comercial e oportunidade de ranqueamento — e para decidir o que reescrever antes de escrever algo novo.</p>
+        <a class="more" href="#">Ler conteúdo &#8594;</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="wrap note">
+  <div>
+    <h2>Como publicar um texto novo</h2>
+    <p>Duplique um bloco <code>&lt;article class="entry"&gt;</code> neste arquivo, troque categoria, data, título e resumo, e aponte o link para a página do artigo. Se quiser uma página própria para o texto, copie este arquivo, apague a lista e escreva o conteúdo no lugar — o cabeçalho, o rodapé e as regras de estilo já vêm prontos.</p>
+  </div>
+  <div>
+    <h2>O que já está resolvido</h2>
+    <p>Título, descrição, canonical, Open Graph e dados estruturados de <code>Blog</code> estão no <code>&lt;head&gt;</code>. Ao criar uma página de artigo, troque o tipo por <code>BlogPosting</code> e acrescente <code>datePublished</code> e <code>headline</code>.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <hr class="rule">
+  <p>&copy; <span id="ano">2026</span> Isabelle Fujioka Pereira — Analista de Conteúdo e SEO, Copywriter. São Paulo/SP.</p>
+</footer>
+
+<script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>
